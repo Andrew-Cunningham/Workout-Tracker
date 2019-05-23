@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://js.stripe.com/terminal/v1/sdk-rc1.js"></script>
+</head>
+
+<body>
+    <header>Workout Tracker 🏋</header>
+    <main>
+        <formHolder>
+            <form name="submitexercise" id="submitexercise" class="submitexercise">
+
+                Exercise ⚡: <input autocomplete="off" id="exercise" required type="text"
+                    placeholder="Enter exercise"><br>
+                Sets ⚡: <input autocomplete="disabled" id="sets" required type="number" placeholder="Enter Sets"><br>
+                Reps ⚡: <input autocomplete="disabled" id="reps" required type="number" placeholder="Enter Reps"><br>
+                <input id='sendIt' type="submit" submit="Submit" value="Add To Workout 🏆">
+            </form>
+        </formHolder>
+        <workoutTrackerBox id='workoutTrackerBox'>
+            <workoutProgress>Workout Progress</workoutProgress>
+        </workoutTrackerBox>
+    </main>
+    <footer>
+            <button id="button" >Download Workout</button>
+    </footer>
+
+</body>
+
+</html>
