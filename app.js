@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         trackedWorkout.appendChild(deleteButton)
         
 
-
+ //
         //window.open('mailto:test@example.com')
 
 
