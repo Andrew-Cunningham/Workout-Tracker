@@ -29,25 +29,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let trackedWorkout = document.createElement("trackedWorkout")
         trackedWorkout.id = idCount
         console.log(trackedWorkout.id)
-        trackedWorkout.innerHTML += "Exercise: " + exercise.value + '<br>' + "Sets: " + sets.value + '<br>' + "Reps: " + reps.value + '<br>' +'<br>'
+        trackedWorkout.innerHTML += "Exercise: " + exercise.value + '<br>' + "Weight/Time: " + sets.value + '<br>' + "Reps/Distance: " + reps.value + '<br>' +'<br>'
         trackedWorkout.style.setProperty('height', '10vh')
         trackedWorkout.style.setProperty('width', '10vw')
         workoutTrackerBox.appendChild(trackedWorkout);
-        let deleteButton = document.createElement('BUTTON')
-        deleteButton.innerHTML="✖"+'<br>'
-        deleteButton.style.setProperty('background', '#ff0000')
-        deleteButton.style.setProperty('color', '#fff')
-        deleteButton.style.setProperty('border', 'none')
-        deleteButton.style.setProperty('padding', '5px 9px')
-        deleteButton.style.setProperty('border-radius', '50%')
-        deleteButton.style.setProperty('cursor', 'pointer')
-        deleteButton.style.setProperty('position', 'relative')
-        deleteButton.style.setProperty('bottom', '150px')
-        deleteButton.style.setProperty('left', '200px')
-        //deleteButton.setAttribute('onclick',"this.parentNode.parentNode.removeChild(this.parentNode)")
-        deleteButton.setAttribute('onclick',"this.parentNode.parentNode.innerHTML=DELETED")
+        // let deleteButton = document.createElement('BUTTON')
+        // deleteButton.innerHTML="✖"+'<br>'
+        // deleteButton.style.setProperty('background', '#ff0000')
+        // deleteButton.style.setProperty('color', '#fff')
+        // deleteButton.style.setProperty('border', 'none')
+        // deleteButton.style.setProperty('padding', '5px 9px')
+        // deleteButton.style.setProperty('border-radius', '50%')
+        // deleteButton.style.setProperty('cursor', 'pointer')
+        // deleteButton.style.setProperty('position', 'relative')
+        // deleteButton.style.setProperty('bottom', '150px')
+        // deleteButton.style.setProperty('left', '200px')
+        // //deleteButton.setAttribute('onclick',"this.parentNode.parentNode.removeChild(this.parentNode)")
+        // deleteButton.setAttribute('onclick',"this.parentNode.parentNode.innerHTML=DELETED")
         
-        trackedWorkout.appendChild(deleteButton)
+        // trackedWorkout.appendChild(deleteButton)
         
 
  //
